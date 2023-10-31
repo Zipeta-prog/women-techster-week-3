@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed; /* Adjust the fixed header height as needed */
+    width: 100%;
+    background-color: rgb(234, 21, 92);
+    color: #fff;
+    text-align: center;
+    top: 0%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-column {
+    height: 100%; /* Adjust the fixed width of the left column as needed */
+    width: fixed;
+    background-color: palevioletred;
+    text-align: center;
+    color: #fff;
+}
+
+.middle-column {
+    width: 100%;
+    height: 100%;
+    background-color: #88ccf0;
+    text-align: center;
+    color: #fff;
+}
+
+.right-column {
+    height: 100%; /* Adjust the fixed width of the right column as needed */
+    width: fixed;
+    background-color: palevioletred;
+    text-align: center;
+    color: #fff;
+}
+
+footer {
+    position: fixed; /* Adjust the fixed header height as needed */
+    width: 100%;
+    background-color: rgb(234, 21, 92);
+    color: #fff;
+    text-align: center;
+    bottom: 0%;
+}
