@@ -5,17 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qr Code</title>
     <style>
+        body{
+            background-color: black;
+        }
         section{
+            align-items: center;
+            display: flex;
+            flex-direction: column;
             margin: 10px auto;
-            width: 50%;
-            height: 50%;
+            width: 40%;
+            height: 600px;
             border: 1px solid black;
+            padding: 30px;
+            background-color: white;
+        }
+        .heading h1{
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 2px;
         }
         .heading{
             text-align: center;
         }
         .heading p{
+            color: grey;
+            margin-top: 2px;
+        }
+        .qr-code{
+            width: 30%;
+            height: auto;
+            border: 1px solid grey;
+            border-radius: 10px; 
+            margin: 20px 0px; 
+            position: relative;
 
+        }
+        .qr-code img{
+            align-self: center;
+            width: 97%;
+        }
+        .qr-code .tree-icon{
+            position: absolute;
+            width: 40px;
+            bottom: 70px;
+            left: 70px;
+        }
+        .text{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        .text hr{
+            display: flex;
+            transform: rotate(90deg);
+            height: 50px;
+        }
+        .content{
+            display: flex;
+            gap: 12px;
+        }
+        .content input{
+            padding: 10px;
+            flex: 5;
+            width: 13rem;
+            border-radius: 5px;
+        }
+        .copy-icon{
+            border: 1px solid grey;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .copy-icon svg{
+            width: 20px;
+        }
+        button{
+            margin-top: 15px;
+            width: 18rem;
+            padding: 12px;
+            border-radius: 5px;
+            background-color: #2a8e3b;
+            color: white;
+            border: none;
         }
     </style>
 </head>
@@ -26,15 +97,19 @@
            <p>Scan this QR in-app to verify a device</p>
         </div>
         <div class="qr-code">
-            <!--QR Code-->
             <img src="https://duckduckgo.com/i/87701897.png" alt="qr-code">
+            <div class="tree-icon">
+                <img src="https://www.kindpng.com/picc/m/199-1990306_hand-tree-png-clipart-transparent-png.png" alt="tree-icon">
+            </div>
         </div>
         <div class="text">
             <hr><p>or enter the code manually</p><hr>
         </div>
         <div class="content">
             <input type="text" name="code" id="" placeholder="HLA8G4L1B9ZX4">
-            <!-- Icon -->
+            <div class="copy-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M216,32H88a8,8,0,0,0-8,8V80H40a8,8,0,0,0-8,8V216a8,8,0,0,0,8,8H168a8,8,0,0,0,8-8V176h40a8,8,0,0,0,8-8V40A8,8,0,0,0,216,32ZM160,208H48V96H160Zm48-48H176V88a8,8,0,0,0-8-8H96V48H208Z"></path></svg>
+            </div>
         </div>
         <button>Continue</button>
     </section>
