@@ -1,0 +1,83 @@
+body{
+    background-color: black;
+}
+section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 40%;
+    height: 600px;
+    border: 1px solid black;
+    padding: 30px;
+    background-color: white;
+}
+.heading h1{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+}
+.heading{
+    text-align: center;
+}
+.heading p{
+    color: grey;
+    margin-top: 2px;
+}
+.qr-code{
+    width: 30%;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 10px; 
+    margin: 20px 0px; 
+    position: relative;
+
+}
+.qr-code img{
+    align-self: center;
+    width: 97%;
+}
+.qr-code .tree-icon{
+    position: absolute;
+    width: 40px;
+    bottom: 70px;
+    left: 70px;
+}
+.text{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.text hr{
+    display: flex;
+    transform: rotate(90deg);
+    height: 50px;
+}
+.content{
+    display: flex;
+    gap: 12px;
+}
+.content input{
+    padding: 10px;
+    flex: 5;
+    width: 13rem;
+    border-radius: 5px;
+}
+.copy-icon{
+    border: 1px solid grey;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.copy-icon svg{
+    width: 20px;
+}
+button{
+    margin-top: 15px;
+    width: 18rem;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #2a8e3b;
+    color: white;
+    border: none;
+}
